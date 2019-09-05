@@ -1,3 +1,5 @@
+import 'p5';
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
 }
