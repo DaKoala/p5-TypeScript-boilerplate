@@ -1,17 +1,20 @@
 {
-  "name": "p5-webpack",
+  "name": "p5-TypeScript-boilerplate",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A boilerplate to develop p5 applications with TypeScript",
+  "main": "src/index.js",
   "scripts": {
     "start": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "watch": "webpack --watch --config webpack.dev.js",
-    "dev": "webpack-dev-server --config webpack.dev.js --open"
+    "dev": "webpack-dev-server --config webpack.dev.js --open",
+    "clean": "rm -rf node_modules && rm -rf dist",
+    "clean:dist": "rm -rf dist",
+    "clean:deps": "rm -rf node_modules"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["p5", "TypeScript", "webpack"],
+  "author": "Billy Zou",
+  "license": "MIT",
   "devDependencies": {
     "@types/p5": "^0.9.0",
     "html-webpack-plugin": "^3.2.0",
