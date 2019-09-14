@@ -37,6 +37,14 @@ npm run start
 npm run watch
 ```
 
+### Clean files
+
+```bash
+npm run clean:dist # clean ./dist folder
+npm run clean:deps # clean ./node_modules folder
+npm run clean # clean both
+```
+
 ## Usage
 
 Put your production code under `src` directory and the main entry should be `src/index.ts`
